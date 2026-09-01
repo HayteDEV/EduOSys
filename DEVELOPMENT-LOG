@@ -1,1 +1,40 @@
+# EduOSys Development Logs
 
+# 2026-09-01
+
+## Goals
+
+* Create an Ubuntu Virtual Machine to serve as the EduOSys development environment.
+* Set up the EduOSys development environment using Ubuntu 26.04.1.
+* Create the first EduOSys system image using Cubic.
+* Set up LXQt as the planned Desktop Environment to prioritize performance and minimize system requirements, making EduOSys more accessible on lower-end hardware.
+* Configure the base Ubuntu system and select the default software to be included in EduOSys.
+
+## Progress
+
+* Created an Ubuntu Virtual Machine for EduOSys development.
+* Downloaded and prepared the Ubuntu 26.04.1 ISO.
+* Installed Cubic for creating a customized Ubuntu-based Linux distribution.
+* Created the initial EduOSys project in Cubic.
+* Configured the initial EduOSys project information and metadata.
+* Reviewed the default Snap packages included in the Ubuntu image.
+* Began customizing the Ubuntu filesystem inside Cubic.
+* Decided to postpone the installation of LXQt until after establishing a functional baseline.
+* Created the initial EduOSys directories and configuration files.
+* Created the `eduosys-info` utility for displaying basic EduOSys project information.
+* Generated the first EduOSys ISO using Zstandard (`zstd`) compression.
+
+## Current Status
+
+* **ISO:** `EduOSys-0.1.0-amd64.iso`
+* **Base:** Ubuntu 26.04.1
+* **Current Desktop Environment:** GNOME
+* **Planned Desktop Environment:** LXQt
+* **ISO Status:** Generated, but not yet tested.
+
+## Next Steps
+
+* Test the generated EduOSys ISO in a virtual machine.
+* Verify that the ISO boots and installs correctly.
+* Test the initial EduOSys configuration.
+* Install and configure LXQt after confirming the baseline system works.
